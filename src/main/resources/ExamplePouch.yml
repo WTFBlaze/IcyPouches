@@ -1,0 +1,14 @@
+Identifier: "Example-Pouch"
+Item-Name: "&e&lExample &b&lPouch"
+Material: "ENDER_CHEST"
+Lore:
+  - '&7'
+  - '&bMin Reward: &e1000'
+  - '&bMax Reward: &e50000'
+  - '&7'
+Minimum: 1000
+Maximum: 50000
+Commands:
+  - 'eco give %player% %random_amount%'
+Permission: "icypouches.pouch.example"
+Message: "&7[&bIcy&ePouches&7] You received %random_amount% from this pouch!"

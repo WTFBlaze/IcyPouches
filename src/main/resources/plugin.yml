@@ -1,0 +1,30 @@
+name: IcyPouches
+version: '${project.version}'
+main: me.wtfblaze.icypouches.IcyPouches
+api-version: 1.18
+prefix: Icy-Pouches
+authors: [ WTFBlaze ]
+description: A Customizable Pouches Plugin
+commands:
+  IcyPouches:
+    description: the main command to use the plugin
+    usage: /icypouches
+    aliases:
+      - ip
+      - pouches
+      - pouch
+      - icypouch
+      - icyp
+permissions:
+  icypouches.*:
+    description: the parent of all permissions for this plugin
+    default: op
+    children:
+      - icypouches.use
+      - icypouches.reload
+  icypouches.use:
+    description: the permission to open pouches
+    default: op
+  icypouches.reload:
+    description: reloads the plugin's config & pouches
+    default: op
